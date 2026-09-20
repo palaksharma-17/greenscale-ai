@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # =========================
 # Python
 # =========================
@@ -71,3 +72,10 @@ htmlcov/
 build/
 dist/
 *.egg-info/
+=======
+venv/
+__pycache__/
+*.pyc
+.env
+backend/.env
+>>>>>>> e54240e4bb85afe94a0fe4fcfb18d282db7e586c
