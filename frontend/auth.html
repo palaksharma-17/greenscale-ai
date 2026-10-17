@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login or Sign Up | GreenScale AI</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-page">
+  <nav class="navbar bg-white border-bottom py-3">
+    <div class="container"><a class="navbar-brand fw-bold brand-name" href="index.html"><span class="brand-mark">G</span> GreenScale AI</a><a class="text-decoration-none text-success" href="index.html">← Back to home</a></div>
+  </nav>
+
+  <main class="container auth-wrap py-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-5">
+        <div class="auth-card">
+          <div class="text-center mb-4">
+            <div class="auth-symbol">G</div>
+            <h1 class="h3 fw-bold mt-3" id="authTitle">Welcome back</h1>
+            <p class="text-secondary" id="authSubtitle">Log in to continue to your dashboard.</p>
+          </div>
+
+          <div class="auth-toggle nav nav-pills nav-fill mb-4" role="tablist">
+            <button class="nav-link active" id="loginTab" type="button">Login</button>
+            <button class="nav-link" id="signupTab" type="button">Sign Up</button>
+          </div>
+
+          <div id="authMessage" class="alert d-none" role="alert"></div>
+
+          <form id="authForm">
+            <div class="mb-3 d-none" id="nameGroup">
+              <label for="fullName" class="form-label">Full name</label>
+              <input type="text" class="form-control form-control-lg" id="fullName" placeholder="Your name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control form-control-lg" id="email" placeholder="you@example.com" required>
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control form-control-lg" id="password" placeholder="Enter your password" minlength="6" required>
+            </div>
+            <div class="mb-3 d-none" id="confirmGroup">
+              <label for="confirmPassword" class="form-label">Confirm password</label>
+              <input type="password" class="form-control form-control-lg" id="confirmPassword" placeholder="Enter password again" minlength="6">
+            </div>
+            <button type="submit" class="btn btn-success btn-lg w-100 mt-2" id="authSubmit">Login</button>
+          </form>
+          <p class="small text-secondary text-center mt-4 mb-0">Prototype only: connect a secure backend before using real accounts.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="js/auth.js"></script>
+</body>
+</html>
